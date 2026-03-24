@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lockScreen">
+  <div class="lockBox">
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="errorMsg"></p>
+  </div>
+</div>
+
+<!-- DESKTOP (hidden at start) -->
+<div id="desktop" class="desktop">
+
+  <div class="icon" onclick="openApp('app1')">
+    <img src="images/icon1.png">
+    <p>Email</p>
+  </div>
+
+  <div class="icon" onclick="openApp('app2')">
+    <img src="images/icon2.png">
+    <p>Main Project</p>
+  </div>
+
+  <div class="icon" onclick="openApp('app3')">
+    <img src="images/icon3.png">
+    <p>Spotify</p>
+  </div>
+
+  <div class="icon" onclick="openApp('app4')">
+    <img src="images/icon4.png">
+    <p>Memory</p>
+  </div>
+
+</div>
+
+<!-- Overlay -->
+<div id="overlay" onclick="closeApp()"></div>
+
+<!-- Window -->
+<div id="window">
+  <button id="closeBtn" onclick="closeApp()">X</button>
+  <img id="windowImage" src="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
